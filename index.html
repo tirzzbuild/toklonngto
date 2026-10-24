@@ -1,0 +1,687 @@
+<!DOCTYPE html><html><head><base href="https://5-halterindah.vercel.app"><meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+<link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
+<link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<title>For you</title>
+<meta name="description" content="@Yolanda i love youu">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Itim:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Chewy&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+    --itim: 'Itim', cursive;
+}
+
+.poppins{font-family: var(--poppins) !important;}
+.nunito{font-family: var(--nunito) !important;}
+.itim{font-family: var(--itim) !important;z-index:10}
+
+body {overflow:hidden;background:#000;font-family:var(--poppins); margin: 0;}
+
+section {position:relative;padding: 0 20px;padding-right:27px;height: 100vh;display: flex; flex-direction: column;align-items:left;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);border-top:1px solid #fff}
+section {background:#000;background-image: var(--bg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+section.first{border-top:0 solid #fff}
+section.first > img{opacity:0}
+section:nth-child(even) {color:white}
+section:nth-child(odd) {color:white}
+section > :first-child {margin-top:150px}
+
+.stiker{display:flex;justify-content:center;align-items:center;gap:10px;margin-left:auto;margin-right:auto;margin-bottom:20px;transform:scale(0);transition:all .7s ease;z-index:100}
+.stiker img{width:87px;height:87px;box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background: rgba(255, 255, 255, 0.7);border:2.5px solid #fff;border-radius: 50%;padding:6px;}
+section .wp img{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;background:none;border:none}
+section .wp::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);}
+#first_stiker{margin-top:-30px}
+
+p{font-family:var(--nunito);}
+h1 {font-size: 1.45rem;line-height:1.4em} h3 {font-size: 1.1rem;}
+h1, h2, h3,h4,h5{margin: 0;text-align: center;margin: 1rem 0;z-index:99}
+h3.anm{transition:all .7s ease}
+.pink{color:pink}
+.putih{text-shadow:none;padding:3px;background:white;color:red;border-radius:50%}
+
+p{color:white;font-size:17px;line-height:1.5em;text-align:center}
+p.anm{margin-top:5px;font-size:17px;text-align:center;margin-left:18px;margin-right:25px;}
+.scaleIn{transform: scale(0);}
+.text-lg{font-size:19px}
+.text-xl{font-size:20px}
+.text-center{text-align:center}
+
+.blocktext{position:relative;width:100%;min-height: 100px;max-height:300px;margin-top:0; overflow: auto; display:flex;justify-content:left;text-align:left;background:rgb(63 55 83 / 40%);backdrop-filter:blur(5px);border-radius:18px 33px 18px 33px;backdrop-filter:blur(8px);box-shadow:none;border:2.5px solid rgba(255,255,255,.75);padding:0;transform:scale(0);transition:all .75s ease;z-index:10}
+#containerPesan{margin-top:20px;margin-bottom:0;padding:0;display:block;width:100%;overflow:auto;min-height:120px;max-height:320px;justify-content:left;text-align:left;}
+
+.blocktext::before{content:"";position:absolute;inset:0;border-radius:30px;padding:2.5px;background:linear-gradient(45deg, #ff889c 0%, transparent 30%, transparent 70%, #ff889c 100%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;}
+.decor{position:absolute;width:12px;height:12px;border:3.3px solid #ff80ab;border-radius:3px;z-index:3}
+.decor-tl{top:10px;left:10px;border-right:none;border-bottom:none}
+.decor-br{bottom:10px;right:10px;border-left:none;border-top:none}
+	
+a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
+#hsatu{transition: all .3s ease}
+#teksnimasi, #kalimatakhir, #palingakhir{z-index:100;margin-right:auto;margin-left:auto;font-size:14px;font-family:var(--nunito);}
+#teksnimasi{font-size:15px;text-align:center;margin-left:70px;margin-right:70px;}
+
+svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+.menu{display:flex;flex-direction:column;justify-content:center;align-items:center;transition: all 1s ease}
+.tombol{background-color: rgba(255,255,255,0);border-radius: 50px;overflow: hidden;display: flex;align-items: center;justify-content: center;-webkit-transition: all .2s ease-out;transition: all .2s ease-out;z-index:10}
+.tombol svg{width: 70px;height: 70px;margin: auto;fill:#ffd4d4;stroke: #ff0000;animation: spin2 1s linear infinite alternate;}
+svg.line{fill: none;stroke: #fff;stroke-width: 2;animation: moving .7s linear infinite alternate;}
+.menu span{z-index:1;font-size:12px;margin-top:12px;color:white;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);}
+.menu{margin-top:25px;transform: scale(0);opacity: 1;}
+
+.overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;background:rgba(0,0,0,1);z-index:100;}
+.loading-message {font-size: 13px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;text-align: center;}
+
+.swal2-modal > *{color:white}
+.swal2-title{line-height:1.3em;font-size:18px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-container.swal2-backdrop-show{background: rgba(0,0,0,.5);}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;background:rgba(0,0,0,.9);max-width:320px;border-right:2px solid #fff;border-left:2px solid #fff;border-radius:4px;top:-50px;}
+
+.transition{transition:all .75s ease}
+.scale0{transform: scale(0);}
+
+.sembunyi > *, .sembunyi{display:none !important}
+
+.blocklove{display: none;flex-direction: column;justify-content: center;align-items: center;}
+.lovein{background:#fff;color:#FF0900;border-radius:50%;width:40px;height:40px;padding:10px;font-size:30px;display:flex;align-items:center;text-align:center;justify-content:center;transition:all .3s ease;}
+.lovein:hover{transform: scale(.9);color:#FF0900;}
+
+@keyframes spin2 {from {transform: rotate(5deg);} to {transform: rotate(-5deg);}}
+@keyframes moving {from {transform: translateY(0);} to {transform: translateY(3px);}}
+
+.hati {position: fixed;top: 0;left: 0;width: 26px;height: 26px;opacity: 0.7;z-index: 0;pointer-events: none;animation: ngelayang 5s ease-in-out forwards;}
+.hati svg {display: block;width: 100%;height: 100%;fill: #ff1744;stroke: none;}
+@keyframes ngelayang {0% {transform: translateY(0vh);opacity: 0;}20% {opacity: 0.5}80% {opacity: 0.5;}100% {transform: translateY(100vh);opacity: 0;}}
+
+.wrapper{position:fixed}.box div{position:fixed;width:60px;height:60px;background-color:transparent;border:6px solid rgba(255,255,255,.3);border-radius:50%;z-index:0}.box div:nth-child(1){top:12%;left:42%;animation:animate 10s linear infinite}.box div:nth-child(2){top:70%;left:50%;animation:animate 7s linear infinite}.box div:nth-child(3){top:17%;left:6%;animation:animate 9s linear infinite}.box div:nth-child(4){top:20%;left:60%;animation:animate 10s linear infinite}.box div:nth-child(5){top:67%;left:10%;animation:animate 6s linear infinite}.box div:nth-child(6){top:80%;left:70%;animation:animate 12s linear infinite}.box div:nth-child(7){top:60%;left:80%;animation:animate 15s linear infinite}.box div:nth-child(8){top:32%;left:25%;animation:animate 16s linear infinite}.box div:nth-child(9){top:90%;left:25%;animation:animate 9s linear infinite}.box div:nth-child(10){top:20%;left:80%;animation:animate 5s linear infinite}@keyframes animate{0%{transform:scale(0) translateY(0) rotate(0);opacity:.8}100%{transform:scale(1.3) translateY(-90px) rotate(360deg);opacity:0}}
+
+/* ====== Overlay Jawaban (Mau / Gamau) ====== */
+#overlayPopup{z-index:200;opacity:0;background:rgba(0,0,0,.8);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+#overlayPopup .cover{margin-top:0}
+.collagePopup{position:relative;top:-50px;width:270px;height:350px}
+.collageItem{position:absolute}
+.collageItem img{display:block;object-fit:cover;border-radius:50%;background: rgba(255, 255, 255, 0.7);border:3px solid #fff;box-shadow:0 6px 20px rgba(0,0,0,0.4);opacity:0;transform:translateY(-14px) scale(0.7);transition:all .5s cubic-bezier(0.34,1.56,0.64,1)}
+.collageItem img.tampil{opacity:1;transform:translateY(0) scale(1)}
+.ci1{top:0;left:0;transform:rotate(-6deg)}
+.ci1 img{width:85px;height:85px}
+.ci2{top:75px;right:0;transform:rotate(4deg)}
+.ci2 img{width:85px;height:85px}
+.ci3{top:180px;left:10px;transform:rotate(-4deg)}
+.ci3 img{width:85px;height:85px}
+.ci4{top:255px;right:15px;transform:rotate(5deg)}
+.ci4 img{width:85px;height:85px}
+.teksPopupMy{position:absolute;font-family:'Chewy',system-ui;font-size:24px;color:#fff;text-shadow:2px 2px 0 #000,-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000;opacity:0;transform:translateY(-10px) scale(0.7);transition:all .5s cubic-bezier(0.34,1.56,0.64,1);white-space:nowrap}
+.teksPopupMy.tampil{opacity:1;transform:translateY(0) scale(1)}
+.ci1 .teksPopupMy{top:90px;left:20px}
+.ci2 .teksPopupMy{bottom:-34px;left:8px;color:#ff3b30}
+.ci3 .teksPopupMy{top:90px;right:-0px;color:#fffc30}
+.ci4 .teksPopupMy{bottom:-34px;right:20px;color:#30d5ff}
+
+.ci1 .teksPopupMy{top:90px;left:-10px}
+.ci2 .teksPopupMy{bottom:-34px;left:25px;color:#ff3b30}
+.ci3 .teksPopupMy{top:90px;right:20px;color:#fffc30}
+.ci4 .teksPopupMy{bottom:-34px;right:0;color:#30d5ff}
+</style></head>
+
+<body>
+	
+   <div class="overlay">
+    <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+     <div id="loveIn" class="blocklove">
+        <style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style>
+        <a href="https://www.feeldream.id/2023/01/script-feeldream.html?m=1#punyasesuatu" target="_blank" class="lovein"><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg></a>
+        <p id="ket">Sentuh LOVEnya Baby!</p>
+     </div>
+   </div>
+
+   <audio src="https://feeldreams.github.io/audio/angelbabydj.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+  <section class="first" id="inisection">
+       <div class="wp"><img src="https://htmlku.com/0/wp.jpg" style="opacity:.6"></div>
+       <div id="first_stiker" class="stiker">
+        <img id="inistiker1" src="https://htmlku.com/0/panda/hiya.gif">
+        <img id="inistiker2" class="sembunyi" src="https://htmlku.com/0/panda/mikir.gif">
+       </div>
+       
+       <h1 id="teks1" class="scaleUp itim">Haloo Sayang! 🫶</h1>
+       <h1 id="teks2" class="sembunyi">Ada 5 Hal Indah di Dunia ini<br>Click dibawah</h1>
+       <p id="teks3" class="scaleIn transition">Kamu Tau Ngga Nih ??<br><br><span class="text-xl">💖💗</span></p>
+       
+       <div id="sentuh" class="menu">
+        <a class="tombol" onclick="klikEmotHeart()">
+          <svg id="svgheart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg>
+        </a>
+        <svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(5.000000, 8.500000)"><path d="M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0"></path></g></svg>
+       </div>
+  </section>
+  
+  <section>
+      <div class="wp"><img src="https://htmlku.com/0/wp2.jpg"></div>
+      <div class="stiker" style="margin-top:-30px;transform:scale(0)" id="second_stiker">
+        <img id="inistiker3" src="https://htmlku.com/0/panda/ciumin.gif">
+        <img id="inistiker4" class="sembunyi" src="https://htmlku.com/0/panda/muah.gif">
+        <img id="inistiker5" class="sembunyi" src="https://htmlku.com/0/panda/terlope.gif">
+      </div>
+      
+      <div class="blocktext">
+        <div class="decor decor-tl"></div>
+        <div class="decor decor-br"></div>
+        <div id="containerPesan">
+            <p id="textUtama" class="anm itim text-lg" style="text-align:left" ;=""></p>
+            <p id="textSecond" class="anm itim text-lg" style="text-align:left" ;=""></p>
+            <p id="textLast" class="anm itim text-lg" style="text-align:left" ;=""></p>
+        </div>
+      </div>
+  </section>
+  
+  <div id="overlayPopup" class="overlay sembunyi" onclick="tutupJawaban()">
+    <div class="cover">
+      <div class="collagePopup">
+        <div class="collageItem ci1">
+          <img id="stikerPopup1" src="https://htmlku.com/0/panda/hearthappy.gif">
+          <span class="teksPopupMy" id="teksPopup1">Paling indah</span>
+        </div>
+        <div class="collageItem ci2">
+          <img id="stikerPopup2" src="https://htmlku.com/0/panda/pusn.gif">
+          <span class="teksPopupMy" id="teksPopup2">Cantik</span>
+        </div>
+        <div class="collageItem ci3">
+          <img id="stikerPopup3" src="https://htmlku.com/0/panda/ledekin.gif">
+          <span class="teksPopupMy" id="teksPopup3">Baik</span>
+        </div>
+        <div class="collageItem ci4">
+          <img id="stikerPopup4" src="https://htmlku.com/0/panda/hiya.gif">
+          <span class="teksPopupMy" id="teksPopup4">Lucu / gemesin</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Box elements animation -->
+    <div>
+        <div class="swrapper">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <p id="vmusicNum" style="display: none">1</p>
+
+<script>
+var ketikanPertama = `1. Bunga 🌸<br>2. Senja 🌇<br>3. Pelangi 🌈<br>4. Bintang 🌟<br>5. Galaxy 🌌<br>`;
+var ketikanKedua = `Kenapa Sayang ?<br>Berharap ada kamu yaa di list ini ? `;
+var ketikanKetiga = `<br>GA ADAA! GA ADA NAMA KAMUUUU<br>Soalnya, kalo kamu itu ...`;
+var ketikanKeempat = `Pokoknyaa,<br>You will always be the most beautiful person I’ve ever met honey 💌`;
+
+pesanwhatsapp = "";
+const body = document.querySelector("body"); 
+const inisection = document.getElementById("inisection");
+
+const selectedMusicValue = document.getElementById('vmusicNum').innerHTML.trim();
+    const musicNum = selectedMusicValue || '0';
+    var musicUrls = {
+        1: "https://feeldreams.github.io/audio/angelbaby.mp3",
+        2: "https://feeldreams.github.io/audio/foreveryoung.mp3",
+        3: "https://feeldreams.github.io/audio/17mashup.mp3",
+        4: "https://feeldreams.github.io/audio/jamrud.mp3",
+        5: "https://feeldreams.github.io/audio/medley.mp3",
+        6: "https://htmlku.my.id/foryoumama/sediaaku.m4a",
+        7: "https://htmlku.my.id/foryoumama/myfingers.m4a",
+        8: "https://htmlku.my.id/assets/audio/monokrom.mp3",
+        9: "https://htmlku.my.id/assets/audio/penjagahati.mp3",
+        10: "https://feeldreams.github.io/audio/seandainya.mp3",
+    };
+        if (musicNum !== '0') {
+        if (String(musicNum).startsWith('audio-')) {
+            linkmp3.src = 'https://htmlku.my.id/';
+        } else if (musicUrls[musicNum]) {
+            linkmp3.src = musicUrls[musicNum];
+        }
+    }
+  	const repeatMusic = false;
+    // if ("20xKv" === 'YGfc') {linkmp3.src = "https://htmlku.my.id/assets/audio/odessa.mp3";}
+  	audio = new Audio('' + linkmp3.src); audio.loop = repeatMusic;
+
+// Animasi Hati Jatuh
+let intervalHati;
+function hatiJatuh() {
+      const hati = document.createElement('div');
+      hati.className = 'hati';
+      hati.textContent = '💘';
+      hati.style.fontSize = '24px';
+      hati.style.lineHeight = '1';
+      hati.style.left = Math.random() * 100 + 'vw';
+      hati.addEventListener('animationend', () => hati.remove());
+      document.body.appendChild(hati);
+}
+   
+fungsi=0;fungsiklik=0;skrg=1;iniaja=0;
+function klikEmotHeart(){
+  sentuh.style="margin-top:100px;transform:scale(3)";
+  setTimeout(function() {
+        if(fungsi==0){
+           window.scrollBy({top: inisection.offsetHeight,behavior: 'smooth'});
+           setTimeout(animasiTeks,500);setTimeout(function() {second_stiker.style="margin-top:-70px;transform:scale(1);transition:all .7s ease";}, 700);
+           fungsi=1;
+        }
+  }, 100);
+}
+
+tinggi = inisection.offsetHeight;
+function tentukantinggi(){tinggi = inisection.offsetHeight;}
+setInterval(tentukantinggi,200);
+
+fungsiAud=0;function playaud(){if(fungsiAud==0){fungsiAud=1;audio.play();}}
+function keatas(){window.scrollTo(0, 0);}
+
+setTimeout(() => {
+    window.scrollTo(0, 0);
+    setTimeout(keatas,500);
+    document.querySelector(".loading-message").style.display = "none";
+    document.querySelector(".blocklove").style.display = "flex";
+}, 100);
+
+first_stiker.style="transform: scale(0)";
+sentuh.style="transform: scale(0)";
+function showSentuh(){sentuh.style="transform: scale(1);";}
+vgantiTeks1 = 0;
+function gantiTeks1(){
+    if(vgantiTeks1 == 0){gantiFoto1();teks1.style="transform: scale(.3);transition:all .75s ease";teks3.style="transform: scale(0);";vgantiTeks1++;setTimeout(gantiTeks1,300);}
+    else {vgantiTeks1 = teks2.innerHTML;teks1.innerHTML = "";teks3.style="display:none";teks1.style="transform: scale(.9);transition:all .75s ease";gantiTeks1nimasi();}
+}
+function gantiFoto1(){
+    first_stiker.style="transform: scale(0);";
+    setTimeout(function() {
+        first_stiker.style.transform = "scale(1)";
+        inistiker1.src = inistiker2.src;
+    }, 300);
+}
+function gantiTeks1nimasi(){
+  	new TypeIt("#teks1", {
+      strings: ["" + vgantiTeks1], startDelay: 10, speed: kecepatanNgetik, cursor: true,
+      afterComplete: function(){
+          teks1.innerHTML = vgantiTeks1;
+          showSentuh();
+      },}).go();
+   }
+
+var sudahKlik = false;var kecepatanNgetik = 25;
+document.getElementById("loveIn").onclick = function() {
+    if (sudahKlik) {
+    playaud();window.scrollTo(0, 0);
+    
+    document.querySelector(".overlay").style.display = "none";
+    first_stiker.style="transform: scale(1)";
+    setTimeout(function() {teks3.style.transform = "scale(1)";}, 300);
+    setTimeout(gantiTeks1, 2300);
+
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".scaleUp", {delay: 100, duration: 1200, scale: .5, move: 0});
+    
+    document.addEventListener('scroll', function(e) {
+        let documentHeight = document.body.scrollHeight;
+        let currentScroll = window.scrollY + window.innerHeight;
+        let modifier = 200; 
+        if(currentScroll + modifier > documentHeight) {console.log('Sudah sampai bawah!');}
+    })
+} else {
+    
+}
+}
+sudahKlik = true;
+document.getElementById('loveIn').innerHTML = '<style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style><label class="lovein"><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg></label><p id="ket">Sentuh LOVEnya!</p>';
+
+const scrollContainer = document.getElementById("containerPesan");
+function autoScroll() {scrollContainer.scrollTop += 10;}
+const scrollInterval = setInterval(autoScroll, 50); 
+
+// FUNCTION KETIK
+function animasiTeks(){
+    document.querySelector(".blocktext").style="transform:scale(1);margin-top:0;";
+    new TypeIt("#textUtama", {
+    strings: [ketikanPertama + '<br>' + ketikanKedua + '<br>' + ketikanKetiga], startDelay: 300, speed: kecepatanNgetik, cursor: true,
+    afterComplete: function(){
+        document.querySelector("#textUtama .ti-cursor").style.display = "none";
+        setTimeout(()=>{overlayPopupAkhir();},300);
+    },}).go();
+}
+
+let timeroverlayPopup;var bisaDipencet = false;
+function overlayPopupAkhir() {
+      const overlayPopup = document.getElementById('overlayPopup');
+      const stikerPopup1 = document.getElementById('stikerPopup1');
+      const stikerPopup2 = document.getElementById('stikerPopup2');
+      const stikerPopup3 = document.getElementById('stikerPopup3');
+      const stikerPopup4 = document.getElementById('stikerPopup4');
+      const teksPopup1 = document.getElementById('teksPopup1');
+      const teksPopup2 = document.getElementById('teksPopup2');
+      const teksPopup3 = document.getElementById('teksPopup3');
+      const teksPopup4 = document.getElementById('teksPopup4');
+
+      teksPopup1.classList.remove('tampil');
+      teksPopup2.classList.remove('tampil');
+      teksPopup3.classList.remove('tampil');
+      teksPopup4.classList.remove('tampil');
+      stikerPopup1.classList.remove('tampil');
+      stikerPopup2.classList.remove('tampil');
+      stikerPopup3.classList.remove('tampil');
+      stikerPopup4.classList.remove('tampil');
+
+      overlayPopup.classList.remove('sembunyi');
+      overlayPopup.style.display = 'flex';
+      setTimeout(() => { overlayPopup.style = "display:flex;opacity:1;transition:all .4s ease"; }, 10);
+
+      new TypeIt("#textSecond", {
+        strings: ["<b>Paling indah, Cantik, Baik, Lucu / gemesin</b>"], startDelay: 300, speed: 20, cursor: true,
+        afterComplete: function(){
+            document.querySelector("#textSecond .ti-cursor").style.display = "none";
+      },}).go();
+
+      // Munculkan gambar & teks "My Girl" satu per satu dari atas ke bawah
+      setTimeout(() => { stikerPopup1.classList.add('tampil'); teksPopup1.classList.add('tampil'); }, 200);
+      setTimeout(() => { stikerPopup2.classList.add('tampil'); teksPopup2.classList.add('tampil'); }, 1000);
+      setTimeout(() => { stikerPopup3.classList.add('tampil'); teksPopup3.classList.add('tampil'); }, 1800);
+      setTimeout(() => { stikerPopup4.classList.add('tampil'); teksPopup4.classList.add('tampil'); }, 2600);
+
+      // Otomatis tutup setelah 5 detik
+      clearTimeout(timeroverlayPopup);
+      timeroverlayPopup = setTimeout(() => { bisaDipencet=true;tutupJawaban(); }, 3400);
+    }
+
+    function tutupJawaban() {
+      if(bisaDipencet===true){
+        clearTimeout(timeroverlayPopup);
+        const overlayPopup = document.getElementById('overlayPopup');
+        overlayPopup.style = "display:flex;opacity:0;transition:all .4s ease";
+        
+        setTimeout(() => {
+            overlayPopup.style.display = "none";
+            overlayPopup.classList.add('sembunyi');
+            document.querySelector(".tombol").style="transform:scale(1);opacity:1;";
+
+            new TypeIt("#textLast", {
+            strings: [ketikanKeempat], startDelay: 300, speed: kecepatanNgetik, cursor: true,
+            afterComplete: function(){
+                document.querySelector("#textLast .ti-cursor").style.display = "none";
+                intervalHati = setInterval(hatiJatuh, 200);
+                setTimeout(()=>{clearInterval(scrollInterval);},800);
+
+                // Setelah bagian terakhir selesai, buka WhatsApp dengan teks "makasih".
+                setTimeout(() => {
+                  balasWa();
+                }, 1000);
+
+                if (replyFeatureEnabled && !showChatFromStart && typeof window.fdReplyWidgetShow === 'function') {
+                  window.fdReplyWidgetShow();
+                }
+                
+                //stiker4a.style = "padding:0";
+	            second_stiker.style = "margin-top:-70px;transform:scale(0)";
+	                setTimeout(() => {
+	                inistiker3.src = inistiker4.src;
+	            }, 220);
+	            setTimeout(() => {
+	                inistiker3.style = "display:block;";
+	                inistiker5.style = "display:block !important;transform:scaleX(1)";
+	                second_stiker.style = "margin-top:-70px;transform:scale(.95)";
+	            }, 300);
+            },}).go();
+
+            // tampilkanTombolBalas();
+        }, 400);
+      }
+    }
+
+    function balasWa() {
+      const nomor = "6285765334291";
+      const pesan = "i love yoouu";
+      window.location.href = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan);
+    }
+
+    function tampilkanTombolBalas() {
+      //document.querySelector(".tombol").innerHTML = '<button style="padding:4px 12px;" onclick="balasWa()">💌 Balas</button>';
+    }
+</script>
+<script>
+  const replyFeatureEnabled = false;
+  const showChatFromStart = replyFeatureEnabled && false;
+</script>
+
+
+<style>
+    .fd-name-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 100000;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+    }
+
+    .fd-name-overlay.show {
+        display: flex;
+        animation: fdNameFade .25s ease;
+    }
+
+    @keyframes fdNameFade {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    .fd-name-card {
+        width: min(92vw, 340px);
+        background: #fff;
+        color: #333;
+        border-radius: 22px;
+        padding: 26px 22px 22px;
+        text-align: center;
+        box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+        text-shadow: none;
+        animation: fdNamePop .3s ease;
+    }
+
+    @keyframes fdNamePop {
+        from { transform: scale(.85); opacity: 0; }
+        to   { transform: scale(1);   opacity: 1; }
+    }
+
+    .fd-name-emoji {
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .fd-name-title {
+        margin: 0 0 6px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: #d46a84;
+    }
+
+    .fd-name-sub {
+        margin: 0 0 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        color: #777;
+    }
+
+    .fd-name-input {
+        width: 100%;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        padding: 12px 14px;
+        border: 2px solid #f0c4d1;
+        border-radius: 14px;
+        outline: none;
+        transition: border-color .2s ease;
+        color: #333;
+        background: #fff;
+    }
+
+    .fd-name-input:focus {
+        border-color: #f4729a;
+    }
+
+    .fd-name-error {
+        display: none;
+        margin: 8px 0 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: #e23e5c;
+        text-align: left;
+    }
+
+    .fd-name-error.show {
+        display: block;
+    }
+
+    .fd-name-btn {
+        width: 100%;
+        margin-top: 16px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        border-radius: 14px;
+        padding: 12px 16px;
+        cursor: pointer;
+        background: linear-gradient(45deg, #ff889c, #f4729a);
+        box-shadow: 0 8px 20px rgba(244, 114, 154, 0.4);
+        transition: transform .15s ease, box-shadow .15s ease;
+    }
+
+    .fd-name-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 26px rgba(244, 114, 154, 0.5);
+    }
+
+    .fd-name-btn:active {
+        transform: translateY(0);
+    }
+</style>
+
+<div class="fd-name-overlay" id="fdNameOverlay" role="dialog" aria-modal="true" aria-labelledby="fdNameTitle">
+    <div class="fd-name-card">
+        <div class="fd-name-emoji">💌</div>
+        <h3 class="fd-name-title" id="fdNameTitle">Masukkan Nama Kamu</h3>
+        <p class="fd-name-sub">Supaya aku tau ini spesial untuk siapa</p>
+        <input type="text" id="fdNameInput" class="fd-name-input" placeholder="Nama kamu..." maxlength="40" autocomplete="off" autocapitalize="words">
+        <p class="fd-name-error" id="fdNameError">Yuk isi nama kamu dulu</p>
+        <button type="button" class="fd-name-btn" id="fdNameSubmit">Lanjutkan</button>
+    </div>
+</div>
+
+<script>
+(function () {
+    var STORAGE_KEY = 'fd_recipient_name';
+    var RECORD_URL  = "https://htmlku.my.id/v/20xKv/view";
+    var CSRF_TOKEN  = "hOdn5J4A6RWh9hSU5FeTo0wX4PXb1lc5liFN8iLq";
+    var CUST_ID     = "39691";
+
+    // Helper global: bisa dipanggil dari template manapun untuk mengambil nama penerima.
+    window.fdRecipientName = function () {
+        try {
+            var v = localStorage.getItem(STORAGE_KEY);
+            return v && v.trim() !== '' ? v.trim() : null;
+        } catch (e) {
+            return null;
+        }
+    };
+
+    // Catat view ke server SETIAP kali halaman show di-load, selama nama
+    // recipient sudah ada (diambil dari localStorage). Owner tidak dihitung
+    // (sudah difilter di sisi server).
+    function recordView(name) {
+        if (!name || !CUST_ID) return;
+
+        fetch(RECORD_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'X-CSRF-TOKEN': CSRF_TOKEN
+            },
+            body: JSON.stringify({ recipient_name: name })
+        }).catch(function () { /* abaikan error jaringan */ });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var overlay = document.getElementById('fdNameOverlay');
+        var input   = document.getElementById('fdNameInput');
+        var error   = document.getElementById('fdNameError');
+        var submit  = document.getElementById('fdNameSubmit');
+
+        if (!overlay || !input || !submit) return;
+
+        // Kalau nama sudah tersimpan sebelumnya, tidak perlu menampilkan modal lagi.
+        var existing = window.fdRecipientName();
+        if (existing) {
+            recordView(existing);
+            document.dispatchEvent(new CustomEvent('fd:recipient-name-ready', {
+                detail: { name: existing }
+            }));
+            return;
+        }
+
+        overlay.classList.add('show');
+        setTimeout(function () { input.focus(); }, 150);
+
+        function save() {
+            var name = (input.value || '').trim();
+            if (name === '') {
+                error.classList.add('show');
+                input.focus();
+                return;
+            }
+            try {
+                localStorage.setItem(STORAGE_KEY, name);
+            } catch (e) { /* abaikan bila storage tidak tersedia */ }
+
+            recordView(name);
+
+            overlay.classList.remove('show');
+            document.dispatchEvent(new CustomEvent('fd:recipient-name-ready', {
+                detail: { name: name }
+            }));
+        }
+
+        submit.addEventListener('click', save);
+        input.addEventListener('input', function () {
+            error.classList.remove('show');
+        });
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                save();
+            }
+        });
+    });
+})();
+</script>
+
+</body></html>
